@@ -1,0 +1,455 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+li {
+  padding-right: 20px;
+  font-weight: bold;
+  
+}
+li:hover {
+  color: rgb(188, 171, 177);
+}
+.nav,
+a,
+li {
+  text-decoration: none;
+  color: black;
+}
+i {
+  padding-right: 20px;
+}
+.logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.logo li {
+  list-style-type: none;
+}
+
+.store {
+  letter-spacing: 15px;
+  line-height: 0.1;
+  padding-left: 5px;
+}
+.formss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px;
+  line-height: 1.9;
+}
+.formss label{
+  font-size: 20px;
+}
+body {
+  background-image: url(./assets/abstract-white-and-gray-overlap-circles-background-3d-paper-circle-banner-with-drop-shadows-minimal-simple-design-for-presentation-flyer-brochure-website-book-etc-vector.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+input {
+  width: 300px;
+  margin: 10px 0px;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+  border-radius: 10px;
+}
+.message {
+  width: 300px;
+  height: 100px;
+}
+button {
+  width: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  border-color: white;
+  font-size: 18px;
+}
+.whole {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  height: 90vh;
+}
+
+.logo {
+  background-color: rgb(243, 248, 248);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.whole2 {
+  line-height: 2;
+}
+.whole2 p{
+  font-size: 20px;
+}
+.foot {
+  text-align: center;
+  background-color: rgb(244, 232, 236);
+  padding: 25px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.foots {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 3px;
+}
+.home {
+  text-align: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+a,
+li {
+  text-decoration: none;
+  color: black;
+}
+li {
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 3px;
+}
+/* @media screen and (min-width: 320px) and (max-width: 768px) {
+  .whole {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+  .whole2{
+    text-align: center;
+  }
+  .whole2 h1{
+    font-size: 25px;
+  }
+
+  .formss {
+    padding: 20px;
+font-size: 15px;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  input, .message {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    margin: 15px auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .message {
+    height: 120px;
+  }
+
+  button {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .formss label {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  li {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .logo {
+    padding: 15px;
+    font-size: 16px;
+    order: -1;
+    width: 100%;
+  }
+
+  .store {
+    letter-spacing: 8px;
+  } */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+   html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .whole {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: auto;
+    padding: 15px; /* Reduced from 20px */
+    margin: 10px;  /* Reduced from 20px */
+    width: 100%;   
+    box-sizing: border-box;
+  }
+  
+  .whole2 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .whole2 h1 {
+    font-size: 25px;
+  }
+
+  .formss {
+    padding: 20px;
+    font-size: 15px;
+    max-width: 100%; /* Changed from 350px */
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  input, .message {
+    width:100%;
+    max-width: 100%; 
+    height: 45px;
+    margin: 15px auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .message {
+    height: 120px;
+  }
+
+  button {
+    width: 100%; /* Changed from 200px */
+    max-width: 250px; /* Reasonable max width */
+    height: 45px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .formss label {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Reduced */
+    width: 100%;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    padding: 12px 0;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    padding: 15px 10px; /* Reduced horizontal padding */
+    font-size: 16px;
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .store {
+    letter-spacing: 2px; /* Reduced from 8px - major scrollbar culprit */
+    word-break: break-word;
+  }
+
+  /* Universal fix for horizontal scroll */
+  
+
+ 
+
+  .foot {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .foot p{
+    font-size: 15px;
+  }
+  .foots {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    padding-right: 25px;
+  }
+  
+  li {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+}
+
+/* Tablet view - Better proportions, no scrollbars */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .whole {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .whole2 {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .whole2 h1 {
+    font-size: 32px;
+  }
+
+  .formss {
+    padding: 25px;
+    font-size: 16px;
+    max-width: 450px;  /* Perfect tablet width */
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  input, .message {
+    width: 100%;
+    max-width: 380px;  /* Looks great on tablets */
+    height: 50px;
+    margin: 18px auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+
+  .message {
+    height: 140px;
+    resize: vertical;
+  }
+
+  button {
+    width: 100%;
+    max-width: 320px;  /* Perfect button size */
+    height: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .formss label {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+  }
+
+  ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .logo {
+    padding: 15px;
+    font-size: 20px;
+    width: auto;
+  }
+
+  .store {
+    letter-spacing: 3px;
+  }
+
+  /* NO SCROLLBAR - Complete fix */
+ 
+
+ 
+}

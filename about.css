@@ -1,0 +1,212 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color:rgb(244, 232, 236); 
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+li {
+  padding-right: 20px;
+  font-weight: bold;
+  
+}
+li:hover {
+  color: rgb(188, 171, 177);
+}
+.nav,
+a,
+li {
+  text-decoration: none;
+  color: black;
+}
+i {
+  padding-right: 30px;
+}
+.logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.logo li {
+  list-style-type: none;
+}
+
+.store {
+  letter-spacing: 15px;
+  line-height: 0.1;
+  padding-left: 5px;
+}
+.shirst {
+  padding-right: 290px;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.images {
+  width: 570px;
+  height: 570px;
+}
+.abouts {
+  width: 500px;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+}
+.dress {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 20px 0;
+  font-size: 16px;
+}
+.word {
+  word-spacing: 4px;
+  padding: 0 5px;
+  text-align: justify;
+  font-size: 18px;
+line-height: 1.3;
+}
+.width {
+  width: 100px;
+  text-align: center;
+}
+.foot {
+  text-align: center;
+  background-color: rgb(244, 232, 236);
+  padding: 25px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.foots {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 3px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 3px;
+}
+a,
+li {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  li {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .logo {
+    order: -1;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .store {
+    letter-spacing: 8px;
+  }
+
+  .shirst {
+    padding-right: 0;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .images {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .abouts {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .dress {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .word {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .width {
+    width: 80px;
+  }
+
+  .foot {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .foot p{
+    font-size: 15px;
+  }
+  .foots {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    padding-right: 25px;
+  }
+  
+  li {
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+}
