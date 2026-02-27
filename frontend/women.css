@@ -7,16 +7,23 @@ nav {
   justify-content: space-between;
   background-color:rgb(244, 232, 236); ;
 }
-ul {
-  display: flex;
+
+  nav ul {
   list-style-type: none;
   font-size: 18px;
 }
-
-li {
-  padding-right: 20px;
+.checking{
+  display: none;
+}
+#check{
+  display: none;
+}
+ nav li {
+  padding: 10px;
+  font-size: 22px;
   font-weight: bold;
-  font-size: larger;
+  display: inline-block;
+  
 }
 li:hover {
   color: rgb(188, 171, 177);
@@ -108,19 +115,45 @@ li {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
 
-  ul {
+  nav ul {
     flex-direction: column;
     padding: 0;
     gap: 10px;
+  
+  }
+
+  
+  .logo a{
+  display: none;
+ }
+ .logo{
+  font-size: 20px;
+ }
+  ul {
+    
+    display: none;
+    background-color: rgba(223, 132, 203, 0.74);
+
+  }.checking{
+    display: block;
+  }
+  #check:checked~ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:70px;
+    left:0px;
+    width:100%;
+    align-items: center;
   }
 
   li {
-    padding: 10px 0;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .whole {
@@ -137,11 +170,11 @@ li {
 
   .logo {
     padding: 15px 0;
-    order: -1; /* Logo first on mobile */
+  
   }
 
   .store {
-    letter-spacing: 5px; /* Reduce spacing on mobile */
+    letter-spacing: 5px; 
   }
 
   .foot {
@@ -156,37 +189,43 @@ li {
     gap: 10px;
   }
   
-  ul {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 13px;
-    padding-right: 25px;
-  }
-  
-  li {
-    padding-right: 0;
-    padding-bottom: 5px;
-  }
+   
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
     padding: 10px 20px;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 
+  
+  
+  
+ .logo{
+  font-size: 25px;
+ }
+
   ul {
-    gap: 15px;
-    font-size: 16px;
+    display: none;
+    background-color: rgba(223, 132, 203, 0.74);
+  }
+
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    align-items: center;
   }
 
   li {
-    padding-right: 15px;
-    font-size: 16px;
-  }
-
-  .logo {
-    padding: 15px;
+    padding: 12px 0;
     font-size: 16px;
   }
 
@@ -221,16 +260,5 @@ li {
     gap: 10px;
   }
   
-  ul {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 13px;
-    padding-right: 25px;
-  }
   
-  li {
-    padding-right: 0;
-    padding-bottom: 5px;
-  }
 }

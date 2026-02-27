@@ -52,24 +52,30 @@ label{
 .login button{
   font-size: large;
 }
+.error{
+  border: 2px solid red;
+}
+.homes{
+  border: 2px solid green;
+}
 /* Mobile: 320px - 768px */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .login {
-    width: 95vw;
+    width: 70%;
     height: 90vh;
     max-width: 350px;
     padding: 20px;
   }
 
   input {
-   width:300px;
+   width:250px;
     height: 35px;
     margin: 20px auto;
     display: block;
   }
 
   button {
-    width: 300px;
+    width: 250px;
     height: 35px;
     margin: 25px auto 0;
     display: block;

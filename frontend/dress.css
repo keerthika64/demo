@@ -24,19 +24,26 @@ nav {
   align-items: center;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 nav li {
-  padding-right: 20px;
   font-weight: bold;
   font-size: 22px;
+} 
+nav ul {
+  list-style-type: none;
+  font-size: 18px;
 }
-
+.checking{
+  display: none;
+}
+#check{
+  display: none;
+}
+ nav li {
+  font-weight: bold;
+  display: inline-block;
+  
+}
 nav li:hover {
   color: rgb(188, 171, 177);
 }
@@ -72,9 +79,7 @@ nav a {
   height: auto;
 }
 
-.logospace{
-  padding-right: 10px;
-}
+
 .second {
   max-width: 600px;
   font-size: 27px;
@@ -236,18 +241,17 @@ button {
   margin-top: 10px;
 }
 
-/* Container for all rows */
+
 .wholess {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* space between rows */
+  gap: 20px;
 }
 
-/* Each row of 3 items */
 .whole {
   display: flex;
   justify-content: space-evenly;
-  gap: 20px; /* space between items */
+  gap: 20px; 
 }
 
 
@@ -367,40 +371,19 @@ li {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  /* .card {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .image2 {
-    width: 100%;
-    height: 314px;
-    max-width: 400px;
-  }
-
-  .second {
-    font-size: 20px;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  button {
-    font-size: 16px;
-  } */
+  
   
   .sec .card {
     flex-direction: column;
-    align-items: center !important;     /* 🔑 Stops stretch */
+    align-items: center !important;    
     height: auto;
-    /* padding: 20px; */
+    
     gap: 20px;
   }
 
   .sec .card .image2 {
     width: 100%;
-    height: auto !important;            /* 🔑 Remove 314px fixed height */
+    height: auto !important;           
     max-width: 400px;
     display: flex;
     align-items: center;
@@ -412,14 +395,14 @@ li {
     width: 100%;
     height: auto !important;
     max-width: 100%;
-    object-fit: contain;               /* Perfect proportions */
+    object-fit: contain;               
   }
 
   .sec .card .second {
     font-size: 20px;
     max-width: 100%;
     text-align: center;
-    order: -1;                         /* Text first, image second */
+    order: -1;                        
   }
 
   .sec .card button {
@@ -427,7 +410,7 @@ li {
   }
 
   .sec .card .one {
-    /* font-size: 1.5rem;                 Responsive heading */
+    
     line-height: 1.2;
   }
 
@@ -459,7 +442,7 @@ li {
   .collect {
     min-height: auto;
     padding: 40px 20px;
-    background-attachment: fixed; /* important for mobile */
+    background-attachment: fixed; 
   }
 
   .collect h1 {
@@ -480,7 +463,7 @@ li {
     
   }
   .sales {
-    flex-direction: column; /* Stack image & text */
+    flex-direction: column;
     gap: 20px;
     padding: 20px 10px;
   }
@@ -578,18 +561,48 @@ li {
     gap: 10px;
   }
   
-  ul {
+ 
+  li {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  
+  } 
+  
+
+  nav {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    font-size: 13px;
-    padding-right: 25px;
+    text-align: center;
+    padding: 15px;
+    justify-content: space-between;
+  }
+
+ 
+ .logo{
+  font-size: 20px;
+ }
+ 
+  ul {
+    
+    display: none;
+    background-color: rgba(223, 132, 203, 0.74);
+
+  }.checking{
+    display: block;
+  }
+  #check:checked~ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:70px;
+    left:0px;
+    width:100%;
+    align-items: center;
   }
   
-  li {
-    padding-right: 0;
-    padding-bottom: 5px;
-  }
+ 
 }
 
 
@@ -761,13 +774,40 @@ li {
     gap: 15px;
   }
   
-  ul {
-    gap: 12px;
-  }
   
-  li {
+    li {
+    padding: 15px 20px;
     font-size: 18px;
-    padding-right: 15px;
+  } 
+   nav {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    justify-content: space-between;
+  }
+
+ .logo{
+  font-size: 25px;
+ }
+ 
+  ul {
+    display: none;
+    background-color: rgba(223, 132, 203, 0.74);
+  }
+
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    align-items: center;
   }
 }
 
