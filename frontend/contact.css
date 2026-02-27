@@ -7,7 +7,6 @@ nav {
   justify-content: space-between;
 }
 nav ul {
-  /* display: flex; */
   list-style-type: none;
   font-size: 18px;
 }
@@ -119,38 +118,11 @@ button {
   margin-top: 25px;
   font-size: 20px;
 }
-.foots {
-  display: flex;
-  justify-content: center;
-}
-ul {
-  display: flex;
-  list-style-type: none;
-}
-li {
-  padding-right: 20px;
-  font-weight: bold;
-  font-size: larger;
-  padding-top: 3px;
-}
+
 .home {
   text-align: center;
 }
-ul {
-  display: flex;
-  list-style-type: none;
-}
-a,
-li {
-  text-decoration: none;
-  color: black;
-}
-li {
-  padding-right: 20px;
-  font-weight: bold;
-  font-size: larger;
-  padding-top: 3px;
-}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
    html, body {
     overflow-x: hidden; 
@@ -190,8 +162,7 @@ li {
   }
 
   input, .message {
-    width:100%;
-    max-width: 100%; 
+    max-width: 90%; 
     height: 45px;
     margin: 15px auto;
     display: block;
@@ -199,12 +170,12 @@ li {
   }
 
   .message {
-    height: 120px;
+    height: 100px;
   }
 
   button {
-    width: 100%; /* Changed from 200px */
-    max-width: 250px; /* Reasonable max width */
+    width: 100%; 
+    max-width: 250px;
     height: 45px;
     font-size: 16px;
     margin: 0 auto;
@@ -215,22 +186,7 @@ li {
     font-size: 18px;
   }
 
-  /* nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px; /* Reduced */
-    /* width: 100%;
-  }
-
-  ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    padding: 0;
-    width: 100%;
-  }*/
+  
 
   li {
     padding: 10px;
@@ -271,15 +227,10 @@ li {
   }
 
   .store {
-    letter-spacing: 2px; /* Reduced from 8px - major scrollbar culprit */
+    letter-spacing: 2px; 
     word-break: break-word;
   }
-
-  /* Universal fix for horizontal scroll */
   
-
- 
-
   .foot {
     padding: 15px;
     font-size: 18px;
@@ -292,21 +243,9 @@ li {
     gap: 10px;
   }
   
-  /* ul {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 13px;
-    padding-right: 25px;
-  }
   
-  li {
-    padding-right: 0;
-    padding-bottom: 5px;
-  } */
 }
 
-/* Tablet view - Better proportions, no scrollbars */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
    html, body {
     overflow-x: hidden;
@@ -372,21 +311,7 @@ li {
     font-size: 20px;
   }
 
-  /* nav {
-    flex-direction: row;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-  }
-
-  ul {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }*/
+  
 
   
    nav {
@@ -423,11 +348,7 @@ li {
     align-items: center;
   }
 
-  /* .logo {
-    padding: 15px;
-    font-size: 20px;
-    width: auto;
-  } */
+  
 
   .store {
     letter-spacing: 3px;

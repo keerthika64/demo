@@ -339,36 +339,16 @@ width: 100%;
   margin-top: 25px;
   font-size: 20px;
 }
-.foots {
-  display: flex;
-  justify-content: center;
 
-}
-ul {
-  display: flex;
-  list-style-type: none;
-}
+
 li {
   padding-right: 20px;
   font-weight: bold;
   font-size: larger;
   padding-top: 3px;
 }
-ul {
-  display: flex;
-  list-style-type: none;
-}
-li {
-  padding-right: 20px;
-  font-weight: bold;
-  font-size: larger;
-  padding-top: 3px;
-}
-a,
-li {
-  text-decoration: none;
-  color: black;
-}
+
+
 
 @media (min-width: 320px) and (max-width: 768px) {
   
